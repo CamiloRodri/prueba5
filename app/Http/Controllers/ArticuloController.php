@@ -104,4 +104,12 @@ class ArticuloController extends Controller
         $articulo->delete();
         return $articulo;
     }
+
+    public function numeroRegistros()
+    {
+        //
+        $articulo = Articulo::select('numero_registro')->pluck('numero_registro');
+        return $articulo;
+    }
+
 }

@@ -28,8 +28,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 */
 Route::get('/categoriaver', 'App\Http\Controllers\CategoriaController@index');
 Route::post('/categoriacrear', 'App\Http\Controllers\CategoriaController@store');
-Route::put('/categoriamodificar', 'App\Http\Controllers\CategoriaController@update');
-Route::delete('/categoriaeliminar', 'App\Http\Controllers\CategoriaController@destroy');
+Route::put('/categoriamodificar/{id}', 'App\Http\Controllers\CategoriaController@update');
+Route::delete('/categoriaeliminar/{id}', 'App\Http\Controllers\CategoriaController@destroy');
 
 
 /*
@@ -37,11 +37,18 @@ Route::delete('/categoriaeliminar', 'App\Http\Controllers\CategoriaController@de
 */
 Route::get('/articulover', 'App\Http\Controllers\ArticuloController@index');
 Route::post('/articulocrear', 'App\Http\Controllers\ArticuloController@store');
-Route::put('/articulomodificar', 'App\Http\Controllers\ArticuloController@update');
-Route::delete('/articuloeliminar', 'App\Http\Controllers\ArticuloController@destroy');
+Route::put('/articulomodificar/{id}', 'App\Http\Controllers\ArticuloController@update');
+Route::delete('/articuloeliminar/{id}', 'App\Http\Controllers\ArticuloController@destroy');
 
-
-
+ /**
+  * Excel - Reporte
+  */
 Route::get('/excel', function () {
     return Excel::download(new ArticulosExport, 'articulos.xlsx');
 });
+
+
+/**
+ * Validacion Registro Doble
+ */
+Route::get('/registroempty', 'App\Http\Controllers\ArticuloController@numeroRegistros');
