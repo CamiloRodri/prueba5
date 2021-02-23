@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Exports\ArticulosExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +39,9 @@ Route::get('/articulover', 'App\Http\Controllers\ArticuloController@index');
 Route::post('/articulocrear', 'App\Http\Controllers\ArticuloController@store');
 Route::put('/articulomodificar', 'App\Http\Controllers\ArticuloController@update');
 Route::delete('/articuloeliminar', 'App\Http\Controllers\ArticuloController@destroy');
+
+
+
+Route::get('/excel', function () {
+    return Excel::download(new ArticulosExport, 'articulos.xlsx');
+});
