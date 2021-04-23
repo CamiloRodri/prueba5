@@ -7,6 +7,65 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+
+# Prueba Ressi
+
+Sistema de Información de Articulos de INventario - Prueba realizada para la empresa Tessi Colombia
+
+### Requerimientos
+
+* PHP >= 5.6.4
+* OpenSSL PHP Extension
+* PDO PHP Extension
+* Mbstring PHP Extension
+* Tokenizer PHP Extension
+* XML PHP Extension
+* MySQL >= 5.7.*
+* <a href="https://getcomposer.org/">Composer</a>
+
+### Instalación
+
+El proyecto esta desarrollado en [Laravel 8.29](https://laravel.com/docs/8.x/)
+
+```sh
+ 
+1- Clonar proyecto 
+
+2- Hacer Pull 
+   
+3- $ composer install  
+
+4- $ npm install  
+
+5- $ npm run dev 
+
+6- Copiar el archivo .env.example 
+   (.env - copia.example) y cambiar el nombre a .env 
+   
+7- Dejar la configuracion DB de developer
+   ejemplo
+   
+   DB_HOST_DEVELOPER=127.0.0.1
+   DB_DATABASE_DEVELOPER=prueba
+   DB_USERNAME_DEVELOPER=root
+   DB_PASSWORD_DEVELOPER=123
+
+8- Crear la base de datos con el respectivo nombre asignado en .env	
+   y configurar el archivo .env 
+   ejemplo:
+   
+   prueba
+   
+9- $ php artisan key:generate
+10- $ php artisan storage:link
+11- Migrar las bases de datos del sistema, y seeders.
+   
+    $ php artisan migrate:fresh --seed
+    
+ 
+```
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
