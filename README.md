@@ -29,20 +29,20 @@ El proyecto esta desarrollado en [Laravel 8.29](https://laravel.com/docs/8.x/)
 
 ```sh
  
-1- Clonar proyecto 
+1. Clonar proyecto 
 
-2- Hacer Pull 
+2. Hacer Pull 
    
-3- $ composer install  
+3. $ composer install  
 
-4- $ npm install  
+4. $ npm install  
 
-5- $ npm run dev 
+5. $ npm run dev 
 
-6- Copiar el archivo .env.example 
+6. Copiar el archivo .env.example 
    (.env - copia.example) y cambiar el nombre a .env 
    
-7- Dejar la configuracion DB de developer
+7. Dejar la configuracion DB de developer
    ejemplo
    
    DB_HOST_DEVELOPER=127.0.0.1
@@ -50,15 +50,15 @@ El proyecto esta desarrollado en [Laravel 8.29](https://laravel.com/docs/8.x/)
    DB_USERNAME_DEVELOPER=root
    DB_PASSWORD_DEVELOPER=123
 
-8- Crear la base de datos con el respectivo nombre asignado en .env	
+8. Crear la base de datos con el respectivo nombre asignado en .env	
    y configurar el archivo .env 
    ejemplo:
    
    prueba
    
-9- $ php artisan key:generate
-10- $ php artisan storage:link
-11- Migrar las bases de datos del sistema, y seeders.
+9. $ php artisan key:generate
+10. $ php artisan storage:link
+11. Migrar las bases de datos del sistema, y seeders.
    
     $ php artisan migrate:fresh --seed
     
