@@ -8,9 +8,9 @@
 </p>
 
 
-# Prueba Ressi
+# Prueba Realizada para Tssi
 
-Sistema de Información de Articulos de INventario - Prueba realizada para la empresa Tessi Colombia
+Sistema de Información de Articulos de Inventario - Prueba realizada para la empresa Tessi Colombia
 
 ### Requerimientos
 
