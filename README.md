@@ -12,7 +12,7 @@
 
 Sistema de Información de Articulos de Inventario - Prueba realizada para la empresa Tessi Colombia S.A.S
 
-### Requerimientos
+## Requerimientos
 
 * PHP >= 5.6.4
 * OpenSSL PHP Extension
@@ -23,7 +23,7 @@ Sistema de Información de Articulos de Inventario - Prueba realizada para la em
 * MySQL >= 5.7.*
 * <a href="https://getcomposer.org/">Composer</a>
 
-### Instalación
+## Instalación
 
 El proyecto esta desarrollado en [Laravel 8.29](https://laravel.com/docs/8.x/)
 
